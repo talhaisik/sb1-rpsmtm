@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer components {
+  input[type="time"] {
+    @apply appearance-none;
+  }
+  
+  input[type="time"]::-webkit-calendar-picker-indicator {
+    @apply bg-transparent cursor-pointer;
+  }
+}
